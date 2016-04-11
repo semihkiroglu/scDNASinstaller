@@ -103,39 +103,39 @@ Yaşanabilme ihtimali olan bir kaç şey:
 
 * Kurulum sonrasında /var/radio dizinini bulamıyorum/boş görüyorum.
 
-	** root erişiminiz yok.
-	** Yanlış bir paket yöneticisi seçildi ve öncesinde ilgili uygulamalar sunucuda yüklü değildi.
+	* root erişiminiz yok.
+	* Yanlış bir paket yöneticisi seçildi ve öncesinde ilgili uygulamalar sunucuda yüklü değildi.
 	
 * Yapılandırma sırasında ilgili ekrana ulaşamıyorum.
 
-	** Sunucu internete bağlı değil.
-	** root erişiminiz yok.
-	** Firewall kapalı değil veya 8000 portuna izin verilmemiş.
-	** Başka bir uygulama 8000 portunu kullanıyor.
-	** Zaten bir DNAS kopyası çalışıyor.
+	* Sunucu internete bağlı değil.
+	* root erişiminiz yok.
+	* Firewall kapalı değil veya 8000 portuna izin verilmemiş.
+	* Başka bir uygulama 8000 portunu kullanıyor.
+	* Zaten bir DNAS kopyası çalışıyor.
 	
 * Giriş yaptığımda DNAS'ı başlatmasını istedim fakat başlatmıyor.
 
 	DNAS, root giriş yaptıktan sonra 1-2 satırlık bir bilgi mesajıyla çalışmaya başladığını söyler veya hata döndürür. Herhangi bir mesaj gelmiyorsa:
 	
-	** root kullanıcı ile giriş yapmadınız.
-	** Yüklemeyi root ile yapmadınız ve yüklemeyi yapan kullanıcı hesabına ilgili satır işlendi.
+	* root kullanıcı ile giriş yapmadınız.
+	* Yüklemeyi root ile yapmadınız ve yüklemeyi yapan kullanıcı hesabına ilgili satır işlendi.
 	
 * radio komutu çalışmıyor.
 
 	Bu betik de yeni yazdığım bir betik ve hatalar olması muhtemeldir.
 	
-	** Eğer radio komutunu çağırdığınızda, komut bulunamadı hatası alıyorsanız:
+	* Eğer radio komutunu çağırdığınızda, komut bulunamadı hatası alıyorsanız:
 	
-		*** /usr/local/bin/ dizinine göz atın ve radio dosyasını arayın. Bulamazsanız proje içinden indirip kendiniz kopyalayın.
+		* /usr/local/bin/ dizinine göz atın ve radio dosyasını arayın. Bulamazsanız proje içinden indirip kendiniz kopyalayın.
 		
-	** Eğer komut var fakat çalışmıyorsa:
+	* Eğer komut var fakat çalışmıyorsa:
 	
-		*** Durumu bana bildirin. Eğer çözüm yolu hakkında fikriniz varsa bunu da bildirmenizden hoşnut olacağım.
+		* Durumu bana bildirin. Eğer çözüm yolu hakkında fikriniz varsa bunu da bildirmenizden hoşnut olacağım.
 		
 * Sunucu çalışıyor gibi görünse de çalışmıyor.
 
-	** /var/radio/ dizinine gidin ve aşağıdaki gibi sunucuyu tekrar başlatmaya çalışın. Log'lar görüntülenecektir. Eğer log'larda hata yoksa durumu bana bildirin lütfen.
+	* /var/radio/ dizinine gidin ve aşağıdaki gibi sunucuyu tekrar başlatmaya çalışın. Log'lar görüntülenecektir. Eğer log'larda hata yoksa durumu bana bildirin lütfen.
 
 		$ ./sc_serv start
 
