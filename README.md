@@ -133,12 +133,13 @@ Yaşanabilme ihtimali olan bir kaç şey:
 
 ## "radio" Komutunun Kullanımı
 Çok küçük bir yapıdır ve kullanımı çok kolaydır. Kısmen DNAS'ın kendine özgü parametrelerini taklit eder ve DNAS ile kısa yoldan haberleşmeyi sağlar.
-Kullanımı: radio start|start_daemon|stop|status
+	
+	* Kullanımı: radio start|start_daemon|stop|status
 
-	<b>start:</b> DNAS'ı foreground (ön planda) başlatmayı sağlar. Ekranda çıktılar bulundurur ve bazen durdurulmadığı sürece ilgili terminal sürecini kilitler.<br>
-	<b>start_daemon:</b> DNAS'ı background (arka planda) başlatmayı sağlar. Ekranda çıktı bulundurmaz. Terminali kullanmaya devam edersiniz.<br>
-	<b>stop:</b> DNAS'a ait tüm process'leri durdurur.
-	<b>status:</b> Çalışan bir DNAS varsa PID değerini ve çalışıyor bilgisini döndürür, yoksa çalışmadığı bilgisini döndürür.
+	* **start:** DNAS'ı foreground (ön planda) başlatmayı sağlar. Ekranda çıktılar bulundurur ve bazen durdurulmadığı sürece ilgili terminal sürecini kilitler.
+	* **start_daemon:** DNAS'ı background (arka planda) başlatmayı sağlar. Ekranda çıktı bulundurmaz. Terminali kullanmaya devam edersiniz.
+	* **stop:** DNAS'a ait tüm process'leri durdurur.
+	* **status:** Çalışan bir DNAS varsa PID değerini ve çalışıyor bilgisini döndürür, yoksa çalışmadığı bilgisini döndürür.
 
 
 ## Kaldırma
@@ -153,6 +154,9 @@ Bu proje yüzünden bunu düşünmenizi istemem fakat kaldırma için henüz bir
 ## Lisans
 Henüz doğru lisans türünü belirleyemedim. Fakat bu süre içerisinde kaynak kodlar değiştirilerek tekrar yayınlanması hoş değildir. Eğer böyle bir şey yapacaksanız ismimi silmeden yapmanızı rica ederim. Hatta mümkünse bana bildirmenizi de rica ederim.
 Yakın zamanda burayı güncellemek dileğiyle :)
+
+## Teşekkürler
+Bu ve nice projemde bana destek olan Yrd. Doç. Dr. Aydın Tarık ZENGİN'e teşekkürlerin en büyüğünü borç bilirim.
 
 
 ## Hakkımda
