@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>scDNASinstaller by semihkiroglu</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>scDNASinstaller</h1>
+        <h2>Shoutcast2 için DNAS yükleyici</h2>
+        <a href="https://github.com/semihkiroglu/scDNASinstaller" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="shoucast2-dnas-yükleyici" class="anchor" href="#shoucast2-dnas-y%C3%BCkleyici" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Shoucast2 DNAS Yükleyici</h1>
+
+<p>Bu kabuk betiği Shoutcast DNAS 2 güncel sürümünü Linux tabanlı sunucunuza daha hızlı ve kolay yüklemenizi sağlar.</p>
+
+<h2>
+<a id="desteklenen-sistemler" class="anchor" href="#desteklenen-sistemler" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Desteklenen Sistemler</h2>
+
+<ul>
+<li>Debian/Ubuntu</li>
+<li>CentOS/Fedora</li>
+<li>Raspbian</li>
+</ul>
+
+<h2>
+<a id="gereksinimler" class="anchor" href="#gereksinimler" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gereksinimler</h2>
+
+<p>Bu yükleyicinin başarıyla çalışması için şunlara dikkat edin:</p>
+
+<ul>
+<li>Internet bağlantısı olan bir sunucuda çalışmalı.</li>
+<li>Yükleyiciyi indirmek için sunucunuzda git kurulu olmalı. (Dokümantasyona göre)</li>
+<li>Yükleyici root kullanıcıda çalışmalı.</li>
+<li>Firewall kapalı olmalı.</li>
+<li>Kurulum sırasında 8000 portunu kullanan hiç bir uygulama olmamalı.</li>
+</ul>
+
+<h2>
+<a id="kurulum" class="anchor" href="#kurulum" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Kurulum</h2>
+
+<h4>
+<a id="debianubuntu-için" class="anchor" href="#debianubuntu-i%C3%A7in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Debian/Ubuntu için</h4>
+
+<p>Öncelikle yükleyici ve dosyalarını indirelim:</p>
+
+<pre><code>$ apt-get install -y git
+$ git clone https://github.com/semihkiroglu/scDNASinstaller.git
+</code></pre>
+
+<p>Root kullanıcıya geçelim: (Zaten root ile çalışıyorsa es geçin)</p>
+
+<pre><code>$ su
+</code></pre>
+
+<p>Her ihtimale karşı yetkileri ayarlayalım:</p>
+
+<pre><code># chmod 7777 install.sh
+</code></pre>
+
+<p>Yükleyiciyi çalıştıralım:</p>
+
+<pre><code># ./install.sh
+</code></pre>
+
+<h4>
+<a id="centosfedora-21-ve-öncesi-için" class="anchor" href="#centosfedora-21-ve-%C3%B6ncesi-i%C3%A7in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CentOS/Fedora 21 ve öncesi için</h4>
+
+<p>Öncelikle yükleyici ve dosyalarını indirelim:</p>
+
+<pre><code>$ yum -y install git
+$ git clone https://github.com/semihkiroglu/scDNASinstaller.git
+</code></pre>
+
+<p>Root kullanıcıya geçelim: (Zaten root ile çalışıyorsa es geçin)</p>
+
+<pre><code>$ su
+</code></pre>
+
+<p>Her ihtimale karşı yetkileri ayarlayalım:</p>
+
+<pre><code># chmod 7777 install.sh
+</code></pre>
+
+<p>Yükleyiciyi çalıştıralım:</p>
+
+<pre><code># ./install.sh
+</code></pre>
+
+<h4>
+<a id="fedora-22-ve-sonrası-için" class="anchor" href="#fedora-22-ve-sonras%C4%B1-i%C3%A7in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fedora 22 ve sonrası için</h4>
+
+<p>Öncelikle yükleyici ve dosyalarını indirelim:</p>
+
+<pre><code>$ dnf install -y git
+$ git clone https://github.com/semihkiroglu/scDNASinstaller.git
+</code></pre>
+
+<p>Root kullanıcıya geçelim: (Zaten root ile çalışıyorsa es geçin)</p>
+
+<pre><code>$ su
+</code></pre>
+
+<p>Her ihtimale karşı yetkileri ayarlayalım:</p>
+
+<pre><code># chmod 7777 install.sh
+</code></pre>
+
+<p>Yükleyiciyi çalıştıralım:</p>
+
+<pre><code># ./install.sh
+</code></pre>
+
+<h2>
+<a id="nasıl-Çalışır" class="anchor" href="#nas%C4%B1l-%C3%87al%C4%B1%C5%9F%C4%B1r" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nasıl Çalışır?</h2>
+
+<ul>
+<li>Kurulum paketine göre sonraki aşamalarda gereken uygulamalar yüklenir.</li>
+<li>DNAS kontrolünü kolaylaştırmak için yazdığım küçük başka bir betik /usr/local/bin dizinine taşınır.</li>
+<li>/var/ dizini içinde radio isimli bir dizin oluşturulur ve oraya geçilir.</li>
+<li>İşlemci mimarisine göre nullsoft sunucularından güncel DNAS paketi indirilir.</li>
+<li>İndirilen paket /var/radio dizini içine açılır ve asıl paket silinir.</li>
+<li>DNAS yapılandırması için sc_serv setup parametresi ile başlatılır ve tarayıcı üzerinde kurulumu tamamlamanızı bekler.</li>
+<li>İsterseniz sunucu başlatıldığında DNAS'ın otomatik çalışması için gereken satırı nasıl ekleyeceğinizi tarif eder.</li>
+<li>İsterseniz root giriş yaptığında DNAS'ı otomatik başlatacak satır ~/.bashrc dosyasına eklenir.</li>
+<li>Kurulum sonlanır.</li>
+</ul>
+
+<h2>
+<a id="yaşanabilecek-sorunlar" class="anchor" href="#ya%C5%9Fanabilecek-sorunlar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Yaşanabilecek Sorunlar</h2>
+
+<p>Öncelikle: Bu benim hem ilk kabul betiği deneyimim, hem de ilk açık kaynak deneyimim. Biraz tecrübesizce davranmış olabilirim. Betik herhangi bir hata ile karşılaşsa bile bunu size bildirecek kabiliyette değil. Şayet gereksinimler kısmında yazdıklarımı yaparsanız sorunsuz bir yükleme olacağı inancındayım.
+Yaşanabilme ihtimali olan bir kaç şey:</p>
+
+<ul>
+<li>
+<p>Kurulum sonrasında /var/radio dizinini bulamıyorum/boş görüyorum.</p>
+
+<ul>
+<li>root erişiminiz yok.</li>
+<li>Yanlış bir paket yöneticisi seçildi ve öncesinde ilgili uygulamalar sunucuda yüklü değildi.</li>
+</ul>
+</li>
+<li>
+<p>Yapılandırma sırasında ilgili ekrana ulaşamıyorum.</p>
+
+<ul>
+<li>Sunucu internete bağlı değil.</li>
+<li>root erişiminiz yok.</li>
+<li>Firewall kapalı değil veya 8000 portuna izin verilmemiş.</li>
+<li>Başka bir uygulama 8000 portunu kullanıyor.</li>
+<li>Zaten bir DNAS kopyası çalışıyor.</li>
+</ul>
+</li>
+<li>
+<p>Giriş yaptığımda DNAS'ı başlatmasını istedim fakat başlatmıyor.</p>
+
+<p>DNAS, root giriş yaptıktan sonra 1-2 satırlık bir bilgi mesajıyla çalışmaya başladığını söyler veya hata döndürür. Herhangi bir mesaj gelmiyorsa:</p>
+
+<ul>
+<li>root kullanıcı ile giriş yapmadınız.</li>
+<li>Yüklemeyi root ile yapmadınız ve yüklemeyi yapan kullanıcı hesabına ilgili satır işlendi.</li>
+</ul>
+</li>
+<li>
+<p>radio komutu çalışmıyor.</p>
+
+<p>Bu betik de yeni yazdığım bir betik ve hatalar olması muhtemeldir.</p>
+
+<ul>
+<li>
+<p>Eğer radio komutunu çağırdığınızda, komut bulunamadı hatası alıyorsanız:</p>
+
+<ul>
+<li>/usr/local/bin/ dizinine göz atın ve radio dosyasını arayın. Bulamazsanız proje içinden indirip kendiniz kopyalayın.</li>
+</ul>
+</li>
+<li>
+<p>Eğer komut var fakat çalışmıyorsa:</p>
+
+<ul>
+<li>Durumu bana bildirin. Eğer çözüm yolu hakkında fikriniz varsa bunu da bildirmenizden hoşnut olacağım.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Sunucu çalışıyor gibi görünse de çalışmıyor.</p>
+
+<ul>
+<li>
+<p>/var/radio/ dizinine gidin ve aşağıdaki gibi sunucuyu tekrar başlatmaya çalışın. Log'lar görüntülenecektir. Eğer log'larda hata yoksa durumu bana bildirin lütfen.</p>
+
+<p>$ ./sc_serv start</p>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="radio-komutunun-kullanımı" class="anchor" href="#radio-komutunun-kullan%C4%B1m%C4%B1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>"radio" Komutunun Kullanımı</h2>
+
+<p>Çok küçük bir yapıdır ve kullanımı çok kolaydır. Kısmen DNAS'ın kendine özgü parametrelerini taklit eder ve DNAS ile kısa yoldan haberleşmeyi sağlar.
+Kullanımı: radio start|start_daemon|stop|status</p>
+
+<pre><code>&lt;b&gt;start:&lt;/b&gt; DNAS'ı foreground (ön planda) başlatmayı sağlar. Ekranda çıktılar bulundurur ve bazen durdurulmadığı sürece ilgili terminal sürecini kilitler.&lt;br&gt;
+&lt;b&gt;start_daemon:&lt;/b&gt; DNAS'ı background (arka planda) başlatmayı sağlar. Ekranda çıktı bulundurmaz. Terminali kullanmaya devam edersiniz.&lt;br&gt;
+&lt;b&gt;stop:&lt;/b&gt; DNAS'a ait tüm process'leri durdurur.
+&lt;b&gt;status:&lt;/b&gt; Çalışan bir DNAS varsa PID değerini ve çalışıyor bilgisini döndürür, yoksa çalışmadığı bilgisini döndürür.
+</code></pre>
+
+<h2>
+<a id="kaldırma" class="anchor" href="#kald%C4%B1rma" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Kaldırma</h2>
+
+<p>Bu proje yüzünden bunu düşünmenizi istemem fakat kaldırma için henüz bir girişimim olmadı. Aşağıdaki komutları sırayla uygulamanız halinde Shoutcast DNAS sisteminizden sorunsuz biçimde kaldırılacaktır.
+ÖNEMLİ: root erişiminiz olmalı!</p>
+
+<pre><code># radio stop
+# rm /usr/local/bin/radio
+# rm -rf /var/radio/
+</code></pre>
+
+<h2>
+<a id="lisans" class="anchor" href="#lisans" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lisans</h2>
+
+<p>Henüz doğru lisans türünü belirleyemedim. Fakat bu süre içerisinde kaynak kodlar değiştirilerek tekrar yayınlanması hoş değildir. Eğer böyle bir şey yapacaksanız ismimi silmeden yapmanızı rica ederim. Hatta mümkünse bana bildirmenizi de rica ederim.
+Yakın zamanda burayı güncellemek dileğiyle :)</p>
+
+<h2>
+<a id="hakkımda" class="anchor" href="#hakk%C4%B1mda" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hakkımda</h2>
+
+<p>Merhaba, ben Semih Kıroğlu. İstanbul Sabahattin Zaim Üniversitesi Bilgisayar Mühendisliği öğrencisiyim ve Bilişim Kulübü Yönetim Kurulu Başkanlığı görevimi sürdürüyorum.</p>
+
+<p>Hakkımda daha detaylı bilgiye aşağıdaki linkten ulaşabilirsiniz (yakında).
+Veya beni Google'lamanız hakkımda daha hızlı bilgiye ulaşmanızı sağlayabilir.
+<a href="https://semih.kiroglu.net"></a><a href="https://semih.kiroglu.net">https://semih.kiroglu.net</a> (bu link ismim ile soy ismim arasına @ işareti eklendiğinde bir e-posta adresine dönüşebilir, tabii protokolü mailto yaparsanız :))</p>
+
+<p>Denediğiniz ve geri bildirimde bulunduğunuz için teşekkür ederim.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/semihkiroglu/scDNASinstaller/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/semihkiroglu/scDNASinstaller/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/semihkiroglu/scDNASinstaller"></a> is maintained by <a href="https://github.com/semihkiroglu">semihkiroglu</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
