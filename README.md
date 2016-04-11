@@ -3,14 +3,12 @@ Shoucast2 DNAS Yükleyici
 
 Bu kabuk betiği Shoutcast DNAS 2 güncel sürümünü Linux tabanlı sunucunuza daha hızlı ve kolay yüklemenizi sağlar.
 
-# Desteklenen Sistemler
--------------------
+## Desteklenen Sistemler
 * Debian/Ubuntu
 * CentOS/Fedora
 * Raspbian
 
-# Gereksinimler
--------------------
+## Gereksinimler
 Bu yükleyicinin başarıyla çalışması için şunlara dikkat edin:
 
 * Internet bağlantısı olan bir sunucuda çalışmalı.
@@ -21,8 +19,6 @@ Bu yükleyicinin başarıyla çalışması için şunlara dikkat edin:
 
 
 # Kurulum
--------------------
-
 ### Debian/Ubuntu için
 
 Öncelikle yükleyici ve dosyalarını indirelim:
@@ -42,7 +38,7 @@ Yükleyiciyi çalıştıralım:
 
 	# ./install.sh
 
--------------------	
+--------------	
 ### CentOS/Fedora 21 ve öncesi için
 
 Öncelikle yükleyici ve dosyalarını indirelim:
@@ -83,7 +79,6 @@ Yükleyiciyi çalıştıralım:
 	# ./install.sh
 
 # Nasıl Çalışır?
-================
 
 * Kurulum paketine göre sonraki aşamalarda gereken uygulamalar yüklenir.
 * DNAS kontrolünü kolaylaştırmak için yazdığım küçük başka bir betik /usr/local/bin dizinine taşınır.
