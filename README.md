@@ -131,7 +131,7 @@ Yaşanabilme ihtimali olan bir kaç şey:
 
 		$ ./sc_serv start
 
-## "radio" Komutunun Kullanımı
+## radio Komutunun Kullanımı
 Çok küçük bir yapıdır ve kullanımı çok kolaydır. Kısmen DNAS'ın kendine özgü parametrelerini taklit eder ve DNAS ile kısa yoldan haberleşmeyi sağlar.
 	
 	* Kullanımı: radio start|start_daemon|stop|status
