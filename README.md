@@ -61,7 +61,7 @@ Yükleyiciyi çalıştıralım:
 
 Öncelikle yükleyici ve dosyalarını indirelim:
 	
-	$ dnf install git
+	$ dnf install -y git
 	$ git clone https://github.com/semihkiroglu/scDNASinstaller.git
 	
 Root kullanıcıya geçelim: (Zaten root ile çalışıyorsa es geçin)
@@ -135,21 +135,10 @@ Yaşanabilme ihtimali olan bir kaç şey:
 Çok küçük bir yapıdır ve kullanımı çok kolaydır. Kısmen DNAS'ın kendine özgü parametrelerini taklit eder ve DNAS ile kısa yoldan haberleşmeyi sağlar.
 Kullanımı: radio start|start_daemon|stop|status
 
-	### start
-	
-		*  DNAS'ı foreground (ön planda) başlatmayı sağlar. Ekranda çıktılar bulundurur ve bazen durdurulmadığı sürece ilgili terminal sürecini kilitler.
-
-	### start_daemon
-
-		* DNAS'ı background (arka planda) başlatmayı sağlar. Ekranda çıktı bulundurmaz. Terminali kullanmaya devam edersiniz.
-
-	### stop
-		
-		* DNAS'a ait tüm process'leri durdurur.
-
-	### status
-
-		* Çalışan bir DNAS varsa PID değerini ve çalışıyor bilgisini döndürür, yoksa çalışmadığı bilgisini döndürür.
+	<b>start:</b> DNAS'ı foreground (ön planda) başlatmayı sağlar. Ekranda çıktılar bulundurur ve bazen durdurulmadığı sürece ilgili terminal sürecini kilitler.<br>
+	<b>start_daemon:</b> DNAS'ı background (arka planda) başlatmayı sağlar. Ekranda çıktı bulundurmaz. Terminali kullanmaya devam edersiniz.<br>
+	<b>stop:</b> DNAS'a ait tüm process'leri durdurur.
+	<b>status:</b> Çalışan bir DNAS varsa PID değerini ve çalışıyor bilgisini döndürür, yoksa çalışmadığı bilgisini döndürür.
 
 
 ## Kaldırma
