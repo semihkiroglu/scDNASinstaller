@@ -1,0 +1,52 @@
+#!/bin/bash
+case $1 in
+
+start)
+echo "DNAS foreground olarak başlatılıyor!"
+echo ""
+cd /var/radio/
+./sc_serv &
+;;
+
+stop)
+echo "Tüm DNAS sunucular durduruluyor!"
+echo ""
+killall sc_serv
+;;
+
+start_daemon)
+echo "DNAS daemon olarak başlatılıyor!"
+echo ""
+cd /var/radio/
+./sc_serv daemon
+;;
+
+status)
+if pgrep "sc_serv" > /dev/null;
+then
+ echo -n "DNAS çalışıyor. PID: "
+ pgrep sc_serv
+else
+ echo "DNAS çalışmıyor."
+fi
+;;
+*)
+
+echo ""
+echo "***************************************************************"
+echo "* Shoutcast2 DNAS Daemon Yapısı                               *"
+echo "*                                                             *"
+echo "* Semih Kıroğlu tarafından oluşturuldu (2016/04/07)           *"
+echo "* semih.kiroglu.net ~ semih@kiroglu.net                       *"
+echo "***************************************************************"
+echo "* Kullanım: radio start|start_daemon|stop|status              *"
+echo "*                                                             *"
+echo "* # start: Ön planda sunucuyu çalıştırır.                     *"
+echo "* # start_daemon: Arka planda sunucuyu çalıştırır.            *"
+echo "* # stop: Çalışan tüm shoutcast sunucuları durdurur.          *"
+echo "* # status: Process durumunu görüntüler.                      *"
+echo "***************************************************************"
+echo ""
+;;
+
+esac
