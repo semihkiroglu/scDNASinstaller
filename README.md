@@ -18,8 +18,8 @@ Bu yükleyicinin başarıyla çalışması için şunlara dikkat edin:
 * Kurulum sırasında 8000 portunu kullanan hiç bir uygulama olmamalı.
 
 
-# Kurulum
-### Debian/Ubuntu için
+## Kurulum
+#### Debian/Ubuntu için
 
 Öncelikle yükleyici ve dosyalarını indirelim:
 	
@@ -38,8 +38,7 @@ Yükleyiciyi çalıştıralım:
 
 	# ./install.sh
 
---------------	
-### CentOS/Fedora 21 ve öncesi için
+#### CentOS/Fedora 21 ve öncesi için
 
 Öncelikle yükleyici ve dosyalarını indirelim:
 	
@@ -58,8 +57,7 @@ Yükleyiciyi çalıştıralım:
 
 	# ./install.sh
 
--------------------
-### Fedora 22 ve sonrası için
+#### Fedora 22 ve sonrası için
 
 Öncelikle yükleyici ve dosyalarını indirelim:
 	
@@ -78,7 +76,7 @@ Yükleyiciyi çalıştıralım:
 
 	# ./install.sh
 
-# Nasıl Çalışır?
+## Nasıl Çalışır?
 
 * Kurulum paketine göre sonraki aşamalarda gereken uygulamalar yüklenir.
 * DNAS kontrolünü kolaylaştırmak için yazdığım küçük başka bir betik /usr/local/bin dizinine taşınır.
@@ -90,8 +88,7 @@ Yükleyiciyi çalıştıralım:
 * İsterseniz root giriş yaptığında DNAS'ı otomatik başlatacak satır ~/.bashrc dosyasına eklenir.
 * Kurulum sonlanır.
 
-# Yaşanabilecek Sorunlar
-================
+## Yaşanabilecek Sorunlar
 
 Öncelikle: Bu benim hem ilk kabul betiği deneyimim, hem de ilk açık kaynak deneyimim. Biraz tecrübesizce davranmış olabilirim. Betik herhangi bir hata ile karşılaşsa bile bunu size bildirecek kabiliyette değil. Şayet gereksinimler kısmında yazdıklarımı yaparsanız sorunsuz bir yükleme olacağı inancındayım.
 Yaşanabilme ihtimali olan bir kaç şey:
@@ -134,11 +131,9 @@ Yaşanabilme ihtimali olan bir kaç şey:
 
 		$ ./sc_serv start
 
-# "radio" Komutunun Kullanımı
-================
-
-	Çok küçük bir yapıdır ve kullanımı çok kolaydır. Kısmen DNAS'ın kendine özgü parametrelerini taklit eder ve DNAS ile kısa yoldan haberleşmeyi sağlar.
-	Kullanımı: radio start|start_daemon|stop|status
+## "radio" Komutunun Kullanımı
+Çok küçük bir yapıdır ve kullanımı çok kolaydır. Kısmen DNAS'ın kendine özgü parametrelerini taklit eder ve DNAS ile kısa yoldan haberleşmeyi sağlar.
+Kullanımı: radio start|start_daemon|stop|status
 
 	### start
 	
@@ -157,9 +152,7 @@ Yaşanabilme ihtimali olan bir kaç şey:
 		* Çalışan bir DNAS varsa PID değerini ve çalışıyor bilgisini döndürür, yoksa çalışmadığı bilgisini döndürür.
 
 
-# Kaldırma
-================
-
+## Kaldırma
 Bu proje yüzünden bunu düşünmenizi istemem fakat kaldırma için henüz bir girişimim olmadı. Aşağıdaki komutları sırayla uygulamanız halinde Shoutcast DNAS sisteminizden sorunsuz biçimde kaldırılacaktır.
 ÖNEMLİ: root erişiminiz olmalı!
 
@@ -168,15 +161,12 @@ Bu proje yüzünden bunu düşünmenizi istemem fakat kaldırma için henüz bir
 	# rm -rf /var/radio/
 
 
-# Lisans
-================
-
+## Lisans
 Henüz doğru lisans türünü belirleyemedim. Fakat bu süre içerisinde kaynak kodlar değiştirilerek tekrar yayınlanması hoş değildir. Eğer böyle bir şey yapacaksanız ismimi silmeden yapmanızı rica ederim. Hatta mümkünse bana bildirmenizi de rica ederim.
 Yakın zamanda burayı güncellemek dileğiyle :)
 
 
-# Hakkımda
-================
+## Hakkımda
 Merhaba, ben Semih Kıroğlu. İstanbul Sabahattin Zaim Üniversitesi Bilgisayar Mühendisliği öğrencisiyim ve Bilişim Kulübü Yönetim Kurulu Başkanlığı görevimi sürdürüyorum.
 
 Hakkımda daha detaylı bilgiye aşağıdaki linkten ulaşabilirsiniz (yakında).
